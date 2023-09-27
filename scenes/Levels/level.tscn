@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://ctaos41ywytbn"]
+
+[ext_resource type="Script" path="res://scenes/Levels/level.gd" id="1_kisnb"]
+[ext_resource type="PackedScene" uid="uid://kho22044c8xo" path="res://scenes/blastRandom/blastRandom.tscn" id="4_d4tat"]
+[ext_resource type="PackedScene" uid="uid://qcbe1dqpbboi" path="res://scenes/Player.tscn" id="4_yrd2m"]
+[ext_resource type="PackedScene" uid="uid://cc217mhr5wld" path="res://scenes/bed.tscn" id="5_8v1ef"]
+[ext_resource type="PackedScene" uid="uid://drh3o7wr8xyrc" path="res://scenes/car/car.tscn" id="5_ufv2r"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_kisnb")
+
+[node name="Player" parent="." instance=ExtResource("4_yrd2m")]
+position = Vector2(706, 580)
+
+[node name="Bed" parent="." instance=ExtResource("5_8v1ef")]
+position = Vector2(851, 141)
+
+[node name="Blast" parent="." instance=ExtResource("4_d4tat")]
+position = Vector2(-54, 184)
+
+[node name="Node2D" parent="." instance=ExtResource("5_ufv2r")]
+position = Vector2(29, 504)
